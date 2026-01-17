@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinetic AI - 内容版权与条款</title>
+    <style>
+        :root {
+            --bg-color: #0D131F;
+            --card-color: #1D222D;
+            --accent-cyan: #00F0D0;
+            --text-white: #ffffff;
+            --text-grey: #B0B5C0;
+            --border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-white);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            padding: 40px 20px;
+            box-sizing: border-box;
+        }
+
+        /* 顶部区域 */
+        .header {
+            margin-bottom: 40px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 20px;
+        }
+
+        .logo {
+            color: var(--accent-cyan);
+            font-weight: 900;
+            font-size: 24px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin: 0;
+            font-weight: 700;
+        }
+
+        .update-time {
+            color: var(--text-grey);
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        /* 内容区块 */
+        .section {
+            background-color: var(--card-color);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 24px;
+            border: 1px solid var(--border-color);
+        }
+
+        h2 {
+            color: var(--accent-cyan);
+            font-size: 20px;
+            margin-top: 0;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+        }
+
+        h2::before {
+            content: '';
+            display: inline-block;
+            width: 4px;
+            height: 18px;
+            background-color: var(--accent-cyan);
+            margin-right: 10px;
+            border-radius: 2px;
+            box-shadow: 0 0 10px var(--accent-cyan);
+        }
+
+        p {
+            color: var(--text-grey);
+            margin-bottom: 16px;
+            font-size: 15px;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        ul {
+            color: var(--text-grey);
+            padding-left: 20px;
+            margin-bottom: 16px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* 强调文字 */
+        strong {
+            color: var(--text-white);
+        }
+
+        /* 底部 */
+        .footer {
+            text-align: center;
+            margin-top: 60px;
+            color: rgba(255, 255, 255, 0.3);
+            font-size: 13px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 30px;
+        }
+
+        a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+            opacity: 0.8;
+            transition: opacity 0.2s;
+        }
+
+        a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <span class="logo">Kinetic AI</span>
+        <h1>内容版权与使用条款</h1>
+        <div class="update-time">最后更新日期：2024年1月20日</div>
+    </div>
+
+    <!-- 1. 知识产权声明 -->
+    <div class="section">
+        <h2>1. 知识产权声明 (Intellectual Property)</h2>
+        <p>Kinetic AI 应用程序及其包含的所有内容（包括但不限于文本、图像、用户界面设计、代码、算法、图表样式及“深色霓虹”视觉主题）均为 <strong>Kinetic AI 开发团队</strong> 及其许可方所有，受版权法、商标法及其他知识产权法律保护。</p>
+        <p>未经我们书面许可，您不得复制、修改、发行、出售或租赁本应用或其任何部分。</p>
+    </div>
+
+    <!-- 2. 用户生成内容 -->
+    <div class="section">
+        <h2>2. 用户数据与内容 (User Content)</h2>
+        <p>您在使用本应用过程中产生的运动数据（如跳绳计数、卡路里消耗记录、生成的运动战报图片）归您所有。</p>
+        <p>通过使用 Kinetic AI，您授予我们非独占的、全球性的许可，允许我们为了提供和优化服务（例如生成排行榜、AI 分析报告）而使用、存储和显示这些数据。我们承诺严格遵守隐私政策，不会将您的个人敏感数据出售给第三方。</p>
+    </div>
+
+    <!-- 3. AI 技术与健康免责 -->
+    <div class="section">
+        <h2>3. AI 分析与健康免责 (Disclaimer)</h2>
+        <p>本应用提供的 AI 动作识别、计数及健康建议（由通义千问大模型提供支持）仅供参考。</p>
+        <ul>
+            <li><strong>非医疗建议：</strong> Kinetic AI 提供的任何健康评分或建议不构成医疗诊断或治疗方案。</li>
+            <li><strong>数据准确性：</strong> 尽管我们努力提高计算机视觉算法的准确性，但在光线不足或背景复杂的情况下，计数可能存在误差。</li>
+            <li><strong>运动风险：</strong> 请根据自身身体状况适度运动。对于因使用本应用而导致的任何意外伤害，Kinetic AI 不承担法律责任。</li>
+        </ul>
+    </div>
+
+    <!-- 4. 第三方内容 -->
+    <div class="section">
+        <h2>4. 第三方服务 (Third-Party Services)</h2>
+        <p>本应用可能包含指向第三方网站或服务的链接（例如分享至社交媒体）。我们不对这些第三方内容拥有控制权，也不对其内容的准确性或合法性负责。</p>
+    </div>
+
+    <!-- 5. 联系我们 -->
+    <div class="section">
+        <h2>5. 联系与侵权投诉 (Contact)</h2>
+        <p>如果您对本版权声明有任何疑问，或认为本应用内的内容侵犯了您的知识产权，请通过以下方式联系我们：</p>
+        <p>
+            <strong>电子邮箱：</strong> <a href="mailto:legal@kinetic.ai">legal@kinetic.ai</a><br>
+            <strong>联系地址：</strong> 此处填写您的公司或工作室地址
+        </p>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Kinetic AI Team. All Rights Reserved.</p>
+    </div>
+</div>
+
+</body>
+</html>

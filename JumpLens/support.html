@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinetic AI - 技术支持</title>
+    <style>
+        :root {
+            --bg-color: #0D131F;
+            --card-color: #1D222D;
+            --accent-cyan: #00F0D0;
+            --text-white: #ffffff;
+            --text-grey: #B0B5C0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-white);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* 顶部 Logo 区域 */
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .app-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #1A233A, #2A354F);
+            border-radius: 20px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+            box-shadow: 0 0 20px rgba(0, 240, 208, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .app-icon svg {
+            width: 40px;
+            height: 40px;
+            fill: var(--accent-cyan);
+        }
+
+        h1 {
+            font-size: 28px;
+            margin: 0;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+        p.subtitle {
+            color: var(--text-grey);
+            font-size: 16px;
+            margin-top: 8px;
+        }
+
+        /* 联系卡片 */
+        .contact-card {
+            background-color: var(--card-color);
+            border-radius: 24px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.2);
+            border-radius: 16px;
+            margin-bottom: 16px;
+            transition: transform 0.2s, border-color 0.2s;
+            border: 1px solid transparent;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .contact-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-2px);
+            border-color: rgba(0, 240, 208, 0.3);
+        }
+
+        .icon-box {
+            width: 48px;
+            height: 48px;
+            background-color: rgba(0, 240, 208, 0.1);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 16px;
+            flex-shrink: 0;
+        }
+
+        .icon-box svg {
+            width: 24px;
+            height: 24px;
+            fill: var(--accent-cyan);
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .label {
+            font-size: 12px;
+            color: var(--text-grey);
+            margin-bottom: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .value {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--text-white);
+        }
+
+        /* 底部 */
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: rgba(255, 255, 255, 0.3);
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <div class="app-icon">
+            <!-- 简单的跳跃/闪电图标 -->
+            <svg viewBox="0 0 24 24">
+                <path d="M7 2v11h3v9l7-12h-4l4-8z"></path>
+            </svg>
+        </div>
+        <h1>Kinetic AI 支持中心</h1>
+        <p class="subtitle">无论是使用问题还是建议，我们随时为您服务</p>
+    </div>
+
+    <div class="contact-card">
+        <!-- 邮箱联系 -->
+        <a href="mailto:support@kinetic.ai" class="contact-item">
+            <div class="icon-box">
+                <svg viewBox="0 0 24 24">
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>
+            </div>
+            <div class="info">
+                <span class="label">发送邮件 (Email)</span>
+                <!-- 👇 请在此处修改您的真实邮箱 -->
+                <span class="value">tomzhu_studios@163.com</span>
+            </div>
+        </a>
+
+        <!-- 电话联系 -->
+        <a href="tel:+8613800000000" class="contact-item">
+            <div class="icon-box">
+                <svg viewBox="0 0 24 24">
+                    <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-2.2 2.2c-3.23-1.61-5.81-4.19-7.41-7.41l2.2-2.2c.27-.27.35-.66.24-1.01-.36-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 2.1 3.2 2.55 3.2 3.09c0 9.39 7.61 17 17 17 .54 0 .99-.45.99-.99v-2.72c0-.54-.45-.99-.99-.99z"/>
+                </svg>
+            </div>
+            <div class="info">
+                <span class="label">客户服务热线 (Phone)</span>
+                <!-- 👇 请在此处修改您的真实电话 -->
+                <span class="value">+86 13651974304</span>
+            </div>
+        </a>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Kinetic AI. All rights reserved.</p>
+        <p>Powered by Qwen Tech</p>
+    </div>
+</div>
+
+</body>
+</html>
