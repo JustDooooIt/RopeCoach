@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Support - Squat Jump AI</title>
+    <style>
+        :root {
+            /* 配色方案：深色 AI 风格 */
+            --bg-color: #121212;
+            --card-bg: #1e1e1e;
+            --text-main: #ffffff;
+            --text-sub: #b0b0b0;
+            --accent-color: #00e5ff; /* 霓虹蓝 */
+            --hover-color: #00b8cc;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            color: var(--text-sub);
+            font-size: 16px;
+        }
+
+        .section-title {
+            font-size: 18px;
+            color: var(--accent-color);
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+            border-bottom: 1px solid #333;
+            padding-bottom: 5px;
+        }
+
+        /* 联系方式卡片 */
+        .contact-grid {
+            display: grid;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        .contact-card {
+            background-color: var(--card-bg);
+            padding: 20px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            transition: transform 0.2s ease, background-color 0.2s;
+            border: 1px solid #333;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-2px);
+            background-color: #252525;
+            border-color: var(--accent-color);
+        }
+
+        .icon {
+            font-size: 24px;
+            margin-right: 15px;
+            width: 40px;
+            height: 40px;
+            background: rgba(0, 229, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent-color);
+        }
+
+        .info h3 {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .info p {
+            margin: 0;
+            color: var(--text-sub);
+            font-size: 14px;
+        }
+
+        /* FAQ 区域 */
+        .faq-item {
+            margin-bottom: 20px;
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: var(--text-main);
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .faq-answer {
+            color: var(--text-sub);
+            font-size: 14px;
+            margin: 0;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            color: var(--text-sub);
+            font-size: 12px;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+        }
+
+        footer a {
+            color: var(--text-sub);
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            color: var(--accent-color);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <!-- 这里可以放你的 App 图标 -->
+            <!-- <img src="icon.png" width="80" style="border-radius:18px; margin-bottom:15px;"> -->
+            <h1>Squat Jump AI 支持中心</h1>
+            <p class="subtitle">我们在使用过程中遇到问题？请通过以下方式联系我们要。</p>
+        </header>
+
+        <!-- 联系方式 -->
+        <div class="section-title">联系我们 / Contact</div>
+        <div class="contact-grid">
+            
+            <!-- 邮箱联系 (点击会自动唤起邮件App) -->
+            <!-- 请替换下面的邮箱地址 -->
+            <a href="mailto:tomzhu_studios@163.com" class="contact-card">
+                <div class="icon">✉️</div>
+                <div class="info">
+                    <h3>发送邮件</h3>
+                    <p>tomzhu_studios@163.com</p>
+                </div>
+            </a>
+
+            <!-- 电话联系 (手机上点击会自动拨号) -->
+            <!-- 请替换下面的电话号码 -->
+            <a href="tel:+8613651974304" class="contact-card">
+                <div class="icon">📞</div>
+                <div class="info">
+                    <h3>电话客服</h3>
+                    <p>+86 13651974304</p>
+                </div>
+            </a>
+        </div>
+
+        <!-- 常见问题 -->
+        <div class="section-title">常见问题 / FAQ</div>
+        
+        <div class="faq-item">
+            <span class="faq-question">App 无法识别我的动作怎么办？</span>
+            <p class="faq-answer">请确保全身在摄像头画面内，并且光线充足。背景尽量简洁，避免与衣服颜色过于接近。</p>
+        </div>
+
+        <div class="faq-item">
+            <span class="faq-question">数据会上传到云端吗？</span>
+            <p class="faq-answer">不会。所有的 AI 识别和数据计算都在您的手机本地完成，切实保护您的隐私。</p>
+        </div>
+
+        <div class="faq-item">
+            <span class="faq-question">如何重置训练数据？</span>
+            <p class="faq-answer">进入 App 的“设置”页面，点击“重置数据”即可清除历史记录。</p>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Squat Jump AI. All rights reserved.</p>
+            <br>
+            <a href="#">隐私政策 (Privacy Policy)</a>
+            <a href="#">使用条款 (Terms)</a>
+        </footer>
+    </div>
+
+</body>
+</html>
