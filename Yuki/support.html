@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サポート - Stylist Yuki</title>
+    <style>
+        :root {
+            --primary-color: #5C4033; /* Yukiのテーマカラー：ダークブラウン */
+            --accent-color: #FDBA74;  /* アクセントカラー：ライトオレンジ */
+            --bg-color: #F9FAFB;
+            --text-color: #374151;
+            --card-bg: #FFFFFF;
+        }
+
+        body {
+            font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--card-bg);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+            letter-spacing: 0.05em;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 3rem 1rem;
+            background: linear-gradient(135deg, #FFF5E1 0%, #FFFFFF 100%);
+        }
+
+        .hero h1 {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .hero p {
+            font-size: 0.95rem;
+            color: #4B5563;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Main Content */
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            margin-bottom: 2rem;
+        }
+
+        .faq-section h2 {
+            color: var(--primary-color);
+            font-size: 1.4rem;
+            margin-top: 0;
+            border-bottom: 2px solid #F3F4F6;
+            padding-bottom: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        details {
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #F3F4F6;
+            padding-bottom: 1rem;
+        }
+
+        summary {
+            font-weight: 600;
+            cursor: pointer;
+            color: var(--primary-color);
+            padding: 0.5rem 0;
+            list-style: none;
+            position: relative;
+            padding-right: 2rem;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary::after {
+            content: "+";
+            position: absolute;
+            right: 0;
+            top: 0.5rem;
+            font-weight: bold;
+            color: var(--accent-color);
+            font-size: 1.2rem;
+        }
+
+        details[open] summary::after {
+            content: "-";
+        }
+
+        details p {
+            margin-top: 0.8rem;
+            font-size: 0.95rem;
+            color: #4B5563;
+            padding-left: 1rem;
+            border-left: 3px solid var(--accent-color);
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            color: var(--primary-color);
+            font-size: 1.4rem;
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.1rem;
+            color: var(--text-color);
+        }
+
+        .contact-label {
+            font-weight: bold;
+            color: var(--primary-color);
+            min-width: 60px;
+            text-align: right;
+        }
+
+        .contact-value a {
+            color: var(--text-color);
+            text-decoration: none;
+            border-bottom: 1px dotted var(--accent-color);
+        }
+
+        .contact-button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.8rem 3rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: opacity 0.2s;
+        }
+
+        .contact-button:hover {
+            opacity: 0.9;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #9CA3AF;
+            font-size: 0.8rem;
+            margin-top: 2rem;
+        }
+
+        footer a {
+            color: #6B7280;
+            text-decoration: none;
+            margin: 0 0.5rem;
+        }
+
+        @media (min-width: 600px) {
+            .contact-info {
+                flex-direction: row;
+                justify-content: center;
+                gap: 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">Stylist Yuki</a>
+        </div>
+    </header>
+
+    <div class="hero">
+        <h1>サポートセンター</h1>
+        <p>Stylist Yukiのご利用でお困りですか？<br>よくある質問と解決方法をご案内します。</p>
+    </div>
+
+    <main>
+        <div class="faq-section">
+            <h2>よくあるご質問 (FAQ)</h2>
+
+            <details>
+                <summary>バーチャル試着はどのような仕組みですか？</summary>
+                <p>Stylist Yukiは、最先端のAI技術（Qwen-Image-Edit-Max）を使用しています。あなたの写真と洋服の画像を分析し、体型に合わせて生地をマッピングします。光の当たり具合や影もリアルに再現するため、自然な試着イメージを確認できます。</p>
+            </details>
+
+            <details>
+                <summary>どのような写真を使えばきれいに仕上がりますか？</summary>
+                <p>全身が写っており、明るい場所で撮影された写真が最適です。体のラインがわかりにくいダボダボの服は避け、シンプルな背景で撮影することをおすすめします。これにより、Yukiがあなたの体型をより正確に認識できます。</p>
+            </details>
+
+            <details>
+                <summary>日本語以外でも会話できますか？</summary>
+                <p>はい、Yukiは<strong>日本語、英語、中国語（簡体字）</strong>に流暢に対応しています。アプリはデバイスの言語設定を自動的に検出し、最適な言語でサポートを提供します。</p>
+            </details>
+
+            <details>
+                <summary>写真データのプライバシーは安全ですか？</summary>
+                <p>はい、お客様のプライバシーを最優先しています。アップロードされた写真は、試着画像の生成とスタイリングアドバイスの提供のみに使用され、マーケティング目的で第三者に共有されることはありません。</p>
+            </details>
+
+            <details>
+                <summary>生成エラーが表示された場合、どうすればよいですか？</summary>
+                <p>まずはインターネット接続をご確認ください。それでも解決しない場合は、別の写真をアップロードするか、アプリを再起動してください。人物がはっきりと写っているかどうかもご確認ください。</p>
+            </details>
+        </div>
+
+        <div class="contact-section">
+            <h2>お問い合わせ</h2>
+            <p>ご不明な点がございましたら、お気軽にお問い合わせください。<br>サポートチームが日本語で対応いたします。</p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span class="contact-label">Email:</span>
+                    <span class="contact-value"><a href="mailto:tomzhu_studios@163.com">tomzhu_studios@163.com</a></span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-label">TEL:</span>
+                    <span class="contact-value"><a href="tel:+86 13651974304">+86 13651974304</a></span>
+                </div>
+            </div>
+
+            <a href="mailto:tomzhu_studios@163.com" class="contact-button">メールで問い合わせる</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Stylist Yuki. All rights reserved.</p>
+        <p>
+            <a href="#">プライバシーポリシー</a> | 
+            <a href="#">利用規約</a> | 
+            <a href="#">特定商取引法に基づく表記</a>
+        </p>
+    </footer>
+
+</body>
+</html>
